@@ -1,0 +1,304 @@
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.5;
+  padding: 40px 0 0 0;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 35px 0;
+}
+
+h3 {
+  color: #071A52;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  font-family: 'Montserrat', sans-serif;
+}
+
+th, td {
+  border-bottom: 1px solid;
+}
+
+th {
+  height: 70px;
+  width: 10%;
+}
+
+td {
+  height: 50px;
+}
+
+tfoot {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 1600px) {
+  .navbar {
+    text-align: left;
+  }
+
+  .navbar-nav {
+    padding-top: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    text-align: center;
+  }
+}
+
+/* title section */
+/* navbar */
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.collapse {
+  margin-right: 5%;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+/* gallery */
+/* hometitle section*/
+.col-gall-1 {
+  background-color: #ffffff;
+  color: #086972;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-align: center;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px 10px 0;
+}
+
+.col-gall-1:hover {
+  background-color: #071A52;
+  transition: 0.2s;
+}
+
+.a-desc-1 {
+  color: #086972;
+}
+
+.a-desc-1:hover {
+  color: #A7FF83;
+  transition: 0.2s;
+}
+
+/* zagreb section */
+.col-gall-2 {
+  background-color: #ffffff;
+  color: #17B978;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-align: center;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px 10px 0;
+}
+
+.col-gall-2:hover {
+  background-color: #086972;
+  transition: 0.2s;
+}
+
+.a-desc-2 {
+  color: #17B978;
+}
+
+.a-desc-2:hover {
+  color: #A7FF83;
+  transition: 0.2s;
+}
+
+/* all sections */
+.image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* features section */
+.feature-box {
+  padding: 2% 4.5%;
+  text-align: center;
+}
+
+.icon {
+  color: #A7FF83;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #17B978;
+  transition: 0.2s;
+}
+
+.feat-text {
+  color: #086972;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+/* Options Section */
+.carousel-item {
+  padding: 3% 15%;
+}
+
+.options-image {
+  background-color: #fff;
+  border-radius: 8%;
+  margin: 50px;
+  padding: 10px;
+  width: 60%;
+}
+
+/* bottom section */
+.btn-bottom-1 {
+  border-color: #071A52;
+  border-width: 2px;
+  color: #071A52;
+  margin: 0 0 0 30px;
+  height: 40px;
+  width: 140px;
+}
+
+.btn-bottom-1:hover {
+  background-color: #071A52;
+  border-color: #071A52;
+}
+
+.btn-bottom-2 {
+  background-color: #071A52;
+  border-color: #071A52;
+  border-width: 2px;
+  margin: 0 0 0 30px;
+  height: 40px;
+  width: 140px;
+}
+
+.btn-bottom-2:hover {
+  background-color: #fff;
+  border-color: #071A52;
+  color: #071A52;
+}
+
+@media (min-width: 1300px) {
+  .btn-bottom-1 {
+    width: 180px;
+  }
+
+  .btn-bottom-2 {
+    width: 180px;
+  }
+}
+
+@media (max-width: 990px) {
+  .btn-bottom-1 {
+    width: 180px;
+    margin-bottom: 10px;
+  }
+
+  .btn-bottom-2 {
+    width: 180px;
+    margin-bottom: 10px;
+  }
+}
+
+.table1 {
+  margin-top: 20px;
+  width: 100%;
+}
+
+#bottom {
+  background-color: #ffffff;
+  padding: 2% 15% 3%;
+  text-align: center;
+}
+
+#zagreb {
+  background-color: #086972;
+  color: #ffffff;
+  padding: 3% 15%;
+}
+
+#options {
+  background-color: #071A52;
+  color: #ffffff;
+  text-align: center;
+  padding: 3% 15%;
+}
+
+#features {
+  padding: 1% 15%;
+  text-align: center;
+}
+
+#dalmatiatitle {
+  background-color: #086972;
+  color: #ffffff;
+  padding: 3% 15%;
+}
+
+#hometitle {
+  background-color: #071A52;
+  color: #ffffff;
+  padding: 3% 15%;
+}
+
+#€title {
+  background-color: #071A52;
+  color: #fff;
+  padding: 3% 15%;
+}
