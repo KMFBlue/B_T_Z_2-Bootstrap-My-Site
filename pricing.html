@@ -21,7 +21,116 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
+<style media="screen">
+  table {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  tr:hover {
+    background-color: #fff;
+    color: #071A52;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  th {
+    border-bottom: 3px solid;
+    height: 60px;
+    width: 10%;
+  }
+
+  td {
+    border-bottom: 1px solid;
+    height: 40px;
+    vertical-align: bottom;
+  }
+
+  tfoot {
+    border-top: 3px solid;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.85rem;
+    height: 75px;
+  }
+
+  form {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+  }
+
+  .col-form {
+    padding: 0 75px;
+  }
+
+input[type=submit] {
+  color: #071A52;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+input[type=submit]:hover {
+  background-color: #071A52;
+  color: #fff;
+}
+
+  input,
+  textarea {
+    border: 2px solid #17B978;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  label {
+    padding-top: 20px
+  }
+
+  a {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  a:hover {
+    color: #A7FF83;
+  }
+</style>
+
 <body>
+
+  <!-- Navbar Section -->
+
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark" style="background-color: #071A52;">
+
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#aboutus">Blue Taxi Zagreb</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutus">AboutUs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Zagreb</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dalmatia.html">Dalmatia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
 
   <!-- Title Section -->
 
@@ -29,39 +138,13 @@
 
     <div class="container-fluid">
 
-      <!-- Nav Bar -->
-
-      <nav class="navbar navbar-expand-lg navbar-dark">
-
-        <a class="navbar-brand" href="">Blue Taxi Zagreb</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="dalmatia.html">Dalmatia</a>
-            </li>
-          </ul>
-
-        </div>
-
-      </nav>
-
       <!-- Table -->
 
-      <div class="row">
+      <div class="row top-row">
 
-        <div class="col-md-6">
-          <table class="table1">
+        <div class="col-lg-6">
+          <h2>Pricelist</h2>
+          <table>
             <thead>
               <tr>
                 <th>Destination</th>
@@ -82,8 +165,8 @@
               </tr>
               <tr>
                 <td><b>Rijeka</b></td>
-                <td>180</td>
-                <td>1.350</td>
+                <td>200</td>
+                <td>1.500</td>
               </tr>
               <tr>
                 <td><b>Pula</b></td>
@@ -97,11 +180,11 @@
               </tr>
               <tr>
                 <td><b>Plitvice L. **</b></td>
-                <td>170</td>
-                <td>1.275</td>
+                <td>220</td>
+                <td>1.650</td>
               </tr>
               <tr>
-                <td><b>Viewpoint ***</b></td>
+                <td><b>Viewpoint @Plitvice ***</b></td>
                 <td>15</td>
                 <td>115</td>
               </tr>
@@ -152,7 +235,19 @@
           </table>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-form col-lg-6">
+
+          <h2>Contact Form</h2>
+          <form action="mailto:blue.taxizagreb@yahoo.com" method="post" enctype="text/plain">
+            <label for=""><b>Your Name</b></label><br>
+            <input type="text" name="YourName" value=""><br>
+            <label for=""><b>Your e-mail</b></label><br>
+            <input type="email" name="YourEmail" value=""><br>
+            <label for=""><b>Your Message</b></label><br>
+            <textarea name="YourMessage" rows="10" cols="30"></textarea><br>
+            <input type="submit" name="" value="Submit">
+          </form>
+          <p><a href="mailto:blue.taxizagreb@yahoo.com">blue.taxizagreb@yahoo.com</a></p>
 
         </div>
 
@@ -161,52 +256,6 @@
     </div>
 
   </section>
-
-
-  <section id="€dalmatia">
-
-    <div class="container-fluid">
-
-      <div class="row">
-
-        <div class="col-lg-6">
-          <div class="row justify-content-sm-center justify-content-lg-start">
-            <div class="col-gall-1 col-md-5">
-              <img class="image" src="images/Plitvice1_.jpg" alt="plitvice-img">
-              <a class="a-desc" href="dalmatia.html">Plitvice Lakes</a>
-            </div>
-            <div class="col-gall-1 col-md-5">
-              <img class="image" src="images/myZadar-Donat_.jpg" alt="zadar-img">
-              <a class="a-desc" href="dalmatia.html">Zadar</a>
-            </div>
-          </div>
-          <div class="row justify-content-sm-center justify-content-lg-start">
-            <div class="col-gall-1 col-md-5">
-              <img class="image" src="images/Dubrovnik_.jpg" alt="dubrovnik-img">
-              <a class="a-desc" href="dalmatia.html">Dubrovnik</a>
-            </div>
-            <div class="col-gall-1 col-md-5">
-              <img class="image" src="images/Rastoke1_.jpg" alt="rastoke-img">
-              <a class="a-desc" href="dalmatia.html">Rastoke</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <h2>Enjoy safe transfers from <br>Zagreb, Capital of Croatia...</h2>
-          <p>Pick-up at the "Franjo Tuđman" airport, <br>or any other spot in
-            the city of Zagreb,
-          <p>Time to explore Plitvice Lakes or Rastoke, <br>on way to
-            Zadar, Split or Dubrovnik...
-          <p>Transfer to places off the coast, <br>like The Castle of Trakošćan...
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
 
   <!-- Features Section -->
 
@@ -238,52 +287,22 @@
 
   <!-- Zagreb Section -->
 
-  <section id="zagreb">
+  <section id="aboutus">
 
     <div class="container-fluid">
 
       <div class="row">
-        <div class="col-lg-6">
-          <h2>Explore Zagreb, Capital of Croatia...</h2>
-          <p>Zagreb has many tourist attractions...
-          <p>We can pick you up at the "Franjo Tuđman" airport, or any other spot in
-            the city of Zagreb...
-          <p>You can list all the places you want to see, send us the list, we will arrange the tour and take you there...
-          <p>We can wait for you to take some photos too...</p>
-          <p>Taxi is the best mean of transport to get around the city. Taxi can use tram lanes to get around the city efficiently.
-            Never the less, we have to be mindfull of the rush hours...
+        <div class="col-lg-6" style="padding-right: 4%;">
+          <h2>Here's a few facts About us:</h2>
+          <p>We are a joint venture of three small business owners,
+          <p>We are Croatians from the city of Zareb,
+          <p>And we have three VW cars of different sizes, depending on number of passengers and luggage.</p>
         </div>
-        <div class="col-lg-6">
-          <div class="row justify-content-sm-center justify-content-lg-start">
-            <div class="col-gall-2 col-md-5">
-              <img class="image" src="images/Zagreb-Katedrala_.jpg" alt="katedrala-img">
-              <div class="desc">Cathedral</div>
-            </div>
-            <div class="col-gall-2 col-md-5">
-              <img class="image" src="images/Zagreb-Cvjetni_2_.jpg" alt="cvjetni-img">
-              <div class="desc">Flower Square</div>
-            </div>
-          </div>
-          <div class="row justify-content-sm-center justify-content-lg-start">
-            <div class="col-gall-2 col-md-5">
-              <img class="image" src="images/Zagreb-Dzamija_.jpg" alt="dzamija-img">
-              <div class="desc">"Mosque"</div>
-            </div>
-            <div class="col-gall-2 col-md-5">
-              <img class="image" src="images/Zagreb-HNK_.jpg" alt="HNK-img">
-              <div class="desc">National Theatre</div>
-            </div>
-          </div>
-          <div class="row justify-content-sm-center justify-content-lg-start">
-            <div class="col-gall-2 col-md-5">
-              <img class="image" src="images/Zagreb-Sv.Marka_.jpg" alt="sv.marko-img">
-              <div class="desc">St.Mark Square</div>
-            </div>
-            <div class="col-gall-2 col-md-5">
-              <img class="image" src="images/Zagreb-Uspinjaca-novo_.jpg" alt="uspinjaca-img">
-              <div class="desc">Cable Car</div>
-            </div>
-          </div>
+        <div class="col-lg-6" style="padding-left: 4%;">
+          <h2>This is what cars we have:</h2>
+          <p><a target="_blank" href="https://en.wikipedia.org/wiki/Volkswagen_Golf#Seventh_generation_(Mk7,_Typ_5G;_2012)">VW Golf - 7th Generation</a></p>
+          <p><a target="_blank" href="https://en.wikipedia.org/wiki/Volkswagen_Golf_Variant#Golf_Mk7_Estate_(2013%E2%80%932020)">VW Golf Variant - 7th Generation</a></p>
+          <p><a target="_blank" href="https://en.wikipedia.org/wiki/Volkswagen_Passat#B8_(Typ_3G;_2015)">VW Passat Variant - 7th Generation</a></p>
         </div>
       </div>
 
@@ -297,16 +316,16 @@
 
       <div class="row justify-content-center">
         <div class="col-md-6 col-lg-3">
-          <a href="#"><button type="button" class="btn-bottom btn btn-outline-success"><i class="fa-solid fa-address-card"></i> CONTACT</button></a>
+          <a href="#€title"><button type="button" class="btn-bottom-2 btn btn-success"><i class="fa-solid fa-jet-fighter-up"></i> CONTACT</button></a>
         </div>
         <div class="col-md-6 col-lg-3">
-          <a href="#"><button type="button" class="btn-bottom btn btn-outline-success"><i class="fa-solid fa-euro-sign"></i> PRICING</button></a>
+          <a href="#€title"><button type="button" class="btn-bottom-2 btn btn-success"><i class="fa-solid fa-jet-fighter-up"></i> PRICING</button></a>
         </div>
         <div class="col-md-6 col-lg-3">
-          <a href="#€zagreb"><button type="button" class="btn-bottom btn btn-outline-success"><i class="fa-solid fa-jet-fighter-up"></i> TOP</button></a>
+          <a href="dalmatia.html"><button type="button" class="btn-bottom-1 btn btn-outline-success"><i class="fa-solid fa-water"></i> DALMATIA</button></a>
         </div>
         <div class="col-md-6 col-lg-3">
-          <a href="dalmatia.html"><button type="button" class="btn-bottom btn btn-outline-success"><i class="fa-solid fa-water"></i> DALMATIA</button></a>
+          <a href="index.html"><button type="button" class="btn-bottom-1 btn btn-outline-success"><i class="fa-solid fa-house"></i> HOME</button></a>
         </div>
       </div>
 
