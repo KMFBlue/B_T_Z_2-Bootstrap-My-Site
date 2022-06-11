@@ -35,19 +35,19 @@ p {
 
 @media (max-width: 1600px) {
   h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 
   h2 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
-
+/*
   h4 {
     font-size: 1.2rem;
-  }
+  } */
 
   p {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     margin-bottom: 0.8rem;
   }
 
@@ -65,12 +65,12 @@ p {
 
 /* navbar */
 .navbar {
-  padding: 1% 10%;
+  padding: 1% 10% 3%;
 }
 
 .navbar-brand {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
@@ -79,7 +79,7 @@ p {
 }
 
 .nav-link {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
@@ -87,7 +87,7 @@ p {
 /* gallery */
 /* hometitle section*/
 .top-row {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .col-gall-1 {
@@ -243,7 +243,7 @@ p {
   background-color: #071A52;
   color: #fff;
   text-align: center;
-  padding: 3% 10%;
+  padding: 3% 10% 1%;
 }
 
 #features {
