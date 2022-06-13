@@ -21,7 +21,7 @@ h3 {
 
 h4 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -41,16 +41,15 @@ p {
   h2 {
     font-size: 1.8rem;
   }
-/*
-  h4 {
-    font-size: 1.2rem;
-  } */
 
-  p {
-    /* font-size: 1.2rem; */
-    margin-bottom: 0.8rem;
+  h4 {
+    font-size: 1.5rem;
   }
 
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -65,12 +64,12 @@ p {
 
 /* navbar */
 .navbar {
-  padding: 1% 10% 3%;
+  padding: 1% 10%;
 }
 
 .navbar-brand {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
@@ -79,7 +78,7 @@ p {
 }
 
 .nav-link {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
@@ -158,15 +157,20 @@ p {
 
 /* Options Section */
 .carousel-item {
-  padding: 3% 15%;
+  padding: 5% 10%;
 }
 
 .options-image {
   background-color: #fff;
-  border-radius: 8%;
-  margin: 50px;
-  padding: 10px;
-  width: 60%;
+  margin: 20px 50px 50px;
+  padding: 2px;
+  width: 40%;
+}
+
+@media (max-width: 800px) {
+  .options-image {
+    width: 80%;
+  }
 }
 
 /* bottom section */
@@ -223,14 +227,14 @@ p {
 
 #bottom {
   background-color: #fff;
-  padding: 2% 10% 3%;
+  padding: 3% 10% 3%;
   text-align: center;
 }
 
 #zagreb {
   background-color: #086972;
   color: #fff;
-  padding: 3% 10%;
+  padding: 5% 10%;
 }
 
 #aboutus {
@@ -243,11 +247,10 @@ p {
   background-color: #071A52;
   color: #fff;
   text-align: center;
-  padding: 3% 10% 1%;
 }
 
 #features {
-  padding: 1% 10% 0;
+  padding: 1% 10%;
   text-align: center;
 }
 
