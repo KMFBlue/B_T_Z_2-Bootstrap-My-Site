@@ -15,7 +15,6 @@ h2 {
 }
 
 h3 {
-  color: #071A52;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -30,7 +29,16 @@ p {
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.5;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a:hover {
+  color: #A7FF83;
 }
 
 @media (max-width: 1600px) {
@@ -48,7 +56,6 @@ p {
 
   p {
     font-size: 1.2rem;
-    margin-bottom: 0.8rem;
   }
 }
 
@@ -149,7 +156,6 @@ p {
 }
 
 .feat-text {
-  color: #086972;
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 0;
@@ -203,6 +209,13 @@ p {
   color: #071A52;
 }
 
+.copyright {
+  color: #A7FF83;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.75rem;
+  padding: 70px 0 0;
+}
+
 @media (min-width: 1300px) {
   .btn-bottom-1 {
     width: 200px;
@@ -227,7 +240,7 @@ p {
 
 #bottom {
   background-color: #fff;
-  padding: 3% 10% 3%;
+  padding: 3% 10% 0;
   text-align: center;
 }
 
@@ -250,6 +263,7 @@ p {
 }
 
 #features {
+  color: #071A52;
   padding: 1% 10%;
   text-align: center;
 }
