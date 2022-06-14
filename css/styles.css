@@ -210,10 +210,10 @@ a:hover {
 }
 
 .copyright {
-  color: #A7FF83;
+  color: #086972;
   font-family: 'Ubuntu', sans-serif;
   font-size: 0.75rem;
-  padding: 70px 0 0;
+  padding: 50px 0 0;
 }
 
 @media (min-width: 1300px) {
